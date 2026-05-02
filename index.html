@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Task Responsive</title>
+    <style>
+        .box-container{
+            border: 1px solid turquoise;
+            display: flex;
+            gap: 10px;}
+        .left-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid green;
+            width: 30%;
+           height: 96vh;
+           padding: 10px;
+           font-size: 2rem;
+           background-color: bisque;
+        }
+        .right-div{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 2rem;
+         padding: 10px;
+         background-color: darkkhaki;
+         border: 2px solid rgb(149, 202, 42);
+         width: 70%;
+         height: 96vh;
+        }
+        @media screen and (max-width:576px) {
+           .box-container{
+            flex-direction: column;
+           } 
+           .left-div{
+            width: 100%;
+           }
+           .right-div{
+            width: 100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="left-div">Left</div>
+        <div class="right-div">Right</div>
+    </div>
+</body>
+</html>
