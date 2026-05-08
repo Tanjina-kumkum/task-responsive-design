@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food image responsive</title>
+    <style>
+        section{
+            display: flex;
+           flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+        .images img{
+           width: 100%;
+           height: 100%;
+        }
+        .images{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+       
+       button{
+       /* margin-left: 50%; */
+       background-color: rgb(65, 65, 199);
+       color: chocolate;
+       border-radius: 5px;
+       }
+       @media screen and (max-width: 576px) {
+        .images{
+            flex-direction: column;
+        }
+        .images img{
+            width:100%
+        }
+        
+       }
+
+    </style>
+    
+</head>
+<body>
+    <section><div class="images">
+        <h3><img src="./images/./images.jpeg" alt=""></h3>
+       <div> <h4>Healthy Food is Food</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum modi cum sint, voluptates possimus corporis inventore voluptatibus repellat esse eum vel praesentium maxime ipsam in itaque at ad suscipit deserunt tenetur expedita officiis atque! Nesciunt accusantium quo dignissimos quae? Error iusto quis voluptatum quibusdam quaerat excepturi reiciendis corporis, totam consequuntur!</p>
+        <button>Buy Now</button></div>
+    </div>
+    <div class="images">
+        <h3><img src="./images/images.jpg" alt=""></h3>
+       <div> <h4>Rich & Delicious Food</h4>
+        <p>Minima perferendis voluptatibus quis illo sapiente vel officia distinctio voluptatem aliquid! Saepe officia enim, exercitationem fugiat iure fugit maiores dolore, dicta distinctio facere nostrum eos eligendi commodi similique veritatis esse modi quos quibusdam impedit? Odit placeat veniam est mollitia recusandae hic perspiciatis at impedit, consequatur iure, et aliquid saepe sunt.</p>
+        <button>Buy Now</button></div>
+    </div></section>
+</body>
+</html>
