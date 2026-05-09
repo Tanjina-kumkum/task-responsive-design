@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Responsive Design</title>
+    <style>
+        section{
+            
+            display: grid;
+            gap: 10px;
+        }
+        .image-2 img{
+            width: 100%;
+            height: 70%;
+            background-color: darkgrey;
+        }
+         .image-1 img{
+            width: 100%;
+            height: 70%;
+            background-color: darkgrey;
+        }
+        
+        .image-1{
+           display: flex;
+        flex-direction: row;
+          gap: 20px;
+        }
+        .image-2{
+           display: flex;
+            flex-direction: row-reverse;
+        
+            gap: 20px;
+        }
+        @media screen and (max-width:576px) {
+          .image-1{
+            flex-direction: column;
+          }  
+           .image-2{
+            flex-direction: column;
+          }    
+        }
+    </style>
+</head>
+<body>
+   <section>
+    <div class="image-1">
+        <img src="./images/image.jpeg" alt="">
+        <div><h2>How to do we use it</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim soluta repudiandae numquam? Perferendis maiores inventore odit autem, eum soluta debitis animi repellendus at quae consequuntur dolores culpa neque sequi recusandae omnis adipisci dolorem itaque? Quia consequuntur atque et eos odit quis amet possimus placeat, facilis ratione, illo odio sit.</p></div>
+    </div>
+    <div class="image-2">
+         <img src="./images/image.png" alt="">
+        <div><h2>How to do we use it</h2>
+        <p>Accusantium sit, provident quas vitae iusto praesentium reiciendis aliquam doloremque voluptatum sequi quidem sint pariatur, illum odio numquam tempora eius nemo distinctio qui natus quae suscipit et deserunt. Distinctio sunt corrupti voluptate atque, iste esse aut voluptas earum officiis autem rerum soluta molestiae ullam dolor aliquam alias quis quasi? Dolor.</p></div>
+       
+    </div>
+
+   </section> 
+</body>
+</html>
